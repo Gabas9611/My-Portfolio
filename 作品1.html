@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孟人平的作品展示 - 微軟仿切</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/作品1.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header-bar">
+            <div class="header-right-section">
+                <button onclick="location.href='目錄.html'" class="back-button">
+                    回前頁
+                </button>
+            </div>
+
+            <div class="header-title">
+                {{ headerTitle }}
+            </div>            
+
+            <div class="logo-container"></div>
+        </div>
+        <div class="content-area">
+            <div class="content-area-bigbox">
+                <div class="content-area-bigbox-left">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/微軟照片/Microsoft 仿切-電腦版.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/微軟照片/微軟仿切用照片2.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/微軟照片/Microsoft 仿切-平板.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/微軟照片/Microsoft 仿切-手機.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-area-bigbox-right">
+                    <div class="content-area-bigbox-right-text-box">
+                        <h2>專案說明</h2>
+                        <p>這是我在學習前端程式設計後所完成的第一份大型作業，整體從版面設計、HTML 結構編寫到 CSS 樣式調整，皆由我親自手刻完成，並未依賴 Bootstrap 等前端框架。</p>
+                        <p>為了完成這個專案，我花了不少時間學習與理解 CSS 的排版技術，實作過程中大量運用 Flexbox 與 CSS Grid 來調整區塊排列，並透過 Media Queries
+                            實現響應式設計（RWD），使網站在不同裝置上皆能良好顯示。</p>
+                        <p>在樣式設計上，我採用了語意化的 class 命名方式（如 .container-normal, .nav-dropdown），不僅讓程式碼結構更易讀，也加強了維護性與延展性。</p>
+                        <p>雖然在製作過程中遇到不少挑戰，包括元素對齊、RWD 製作與跨瀏覽器相容性等問題，但透過不斷地測試與調整，我順利完成了這份作品。這次經驗不僅讓我熟悉了 HTML 和 CSS
+                            的實作流程，也讓我體會到手刻網頁雖然繁瑣，卻是建立紮實基礎最有效的方式。</p>
+                    </div>
+                    <div class="content-area-bigbox-right-img-box">
+                        <div class="img-description">當好不容易做到收尾了突然發現排版亂掉...啊~~~</div>
+                        <img src="./img/微軟照片/錯誤照.jpg" alt="Placeholder Image"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="content-area-bigbox-right-button-area">
+                        <button @click="goToWebsite" class="go-web-buttton">進入網站</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/作品1.js"></script>
+</body>
+
+</html>
