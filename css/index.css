@@ -46,8 +46,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* 讓標題和logo分開 */
-    padding: 0 40px;
+    /* 讓內容水平置中 */
+    padding: 10px 40px;
     /* 左右內邊距 */
     color: white;
     font-weight: bold;
@@ -56,22 +56,60 @@ html {
 }
 
 .header-title {
-    font-size: 4rem;
+    font-size: 3rem;
     /* 增大字體 */
     margin-left: 20px;
     /* 標題左側間距 */
     white-space: nowrap;
     /* 防止標題換行 */
+    order: 1;
+}
+
+
+.back-button {
+    background-color: rgba(108, 163, 226, 0.7);
+    /* 藍色，帶透明度 */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    /* 圓角 */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+    margin-right: 20px;
+    /* 按鈕與logo之間的間距 */
+}
+
+.back-button:hover {
+    background-color: rgba(90, 140, 200, 0.8);
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: rgba(70, 120, 180, 0.9);
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* 將右側區塊推到最右邊 */
+    order: 2;
 }
 
 .logo-container {
     /* 預留給logo的容器 */
-    width: 100px;
+    width: 80px;
     /* 根據logo實際大小調整 */
-    height: 100px;
+    height: 80px;
     /* 根據logo實際大小調整 */
-    margin-left: auto; /* 將logo推到最右邊 */
-    margin-right: 20px; /* logo右側間距 */
+    margin-right: 20px;
+    /* logo右側間距 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,17 +118,21 @@ html {
     /* 包含在容器內 */
     background-position: center;
     background-repeat: no-repeat;
+    order: 3;
 }
 
 .content-area {
     flex-grow: 1;
-    /* 讓內容區域佔據剩餘空間 */
     width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 垂直居中按鈕 */
-    /* 背景圖片已經在#app上設定 */
+    gap: 20px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    /* ✅ 保留底部空隙 */
 }
 
 .enter-button {
