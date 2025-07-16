@@ -46,7 +46,7 @@ html {
     align-items: center;
     justify-content: space-between;
     /* 讓內容水平置中 */
-    padding: 0 40px;
+    padding: 10px 40px;
     /* 左右內邊距 */
     color: white;
     font-weight: bold;
@@ -55,7 +55,7 @@ html {
 }
 
 .header-title {
-    font-size: 4rem;
+    font-size: 3rem;
     /* 增大字體 */
     margin-left: 20px;
     /* 標題左側間距 */
@@ -103,9 +103,9 @@ html {
 
 .logo-container {
     /* 預留給logo的容器 */
-    width: 100px;
+    width: 80px;
     /* 根據logo實際大小調整 */
-    height: 100px;
+    height: 80px;
     /* 根據logo實際大小調整 */
     margin-right: 20px;
     /* logo右側間距 */
@@ -122,13 +122,16 @@ html {
 
 .content-area {
     flex-grow: 1;
-    /* 讓內容區域佔據剩餘空間 */
     width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 垂直居中按鈕 */
-    /* 背景圖片已經在#app上設定 */
+    gap: 20px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    /* ✅ 保留底部空隙 */
 }
 
 .content-area {
